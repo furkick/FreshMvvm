@@ -117,6 +117,8 @@ namespace FreshMvvmApp
 
             throw new Exception ("Cannot do this");
         }
+
+        public Task PopToPageIndex(int pageIndex, bool animate = true) => throw new NotImplementedException();
     }
 }
 

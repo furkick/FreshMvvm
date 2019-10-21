@@ -120,6 +120,11 @@ namespace FreshMvvm
             return (Detail as NavigationPage).PopToRootAsync (animate);
         }
 
+        public Task PopToPageIndex(int pageIndex, bool animate = false)
+        {
+            throw new NotImplementedException();
+        }
+
         public string NavigationServiceName { get; private set; }
 
         public void NotifyChildrenPageWasPopped()

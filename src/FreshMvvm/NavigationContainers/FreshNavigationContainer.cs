@@ -71,6 +71,16 @@ namespace FreshMvvm
         {
             throw new Exception("This navigation container has no selected roots, just a single root");
         }
+
+        public Task PopToPageIndex(int pageIndex, bool animate = true)
+        {
+            while (Navigation.NavigationStack.Count != pageIndex)
+            {
+                Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 1]);
+            }
+
+            return Navigation.PopAsync(animate);
+        }
     }
 }
 

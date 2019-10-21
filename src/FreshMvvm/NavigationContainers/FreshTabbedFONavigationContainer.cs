@@ -107,6 +107,8 @@ namespace FreshMvvm
 
             return null;
         }
+
+        public Task PopToPageIndex(int pageIndex, bool animate = true) => throw new NotImplementedException();
     }
 }
 
